@@ -38,8 +38,13 @@ public class Banco {
         return result;
         
     }
+
+    @Override
+    public String toString() {
+        return "Banco{" + "RUC=" + RUC + ", clientes=" + clientes + '}';
+    }
     
-    public Cuenta[] getCuentasPorCliente(Cliente c){
+   /*public Cuenta[] getCuentasPorCliente(Cliente c){
         for(int i=0;i<this.clientes.length;i++){
             this.clientes[i]=c;
             
@@ -47,7 +52,7 @@ public class Banco {
         }
         
         
-    }
+    }*/
     
     public boolean validarTarjeta(String numTarjeta, String dni,String clave){
         boolean result=false;

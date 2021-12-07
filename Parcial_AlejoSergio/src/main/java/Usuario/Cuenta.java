@@ -10,9 +10,14 @@ public class Cuenta {
     private float saldo;
     private Cliente titular;
     private Tarjeta tarjeta;
-    
+
+     public Cuenta(String numero, float saldo) {
+        this.numero = numero;
+        this.saldo = saldo;
+    }
      
-    
+     
+     
     public boolean depositar(float monto){
         boolean result=false;
         if(monto > 0.0){
@@ -23,6 +28,8 @@ public class Cuenta {
         return result;
         
     }
+
+    
     
     public boolean retirar(float monto){
         boolean result=false;
@@ -62,4 +69,12 @@ public class Cuenta {
         return result;
         
     }
+    
+    @Override
+    public String toString() {
+        return "Cuenta{" + "numero=" + numero + ", fechaApertura=" + fechaApertura + ", saldo=" + saldo + ", titular=" + titular +  '}';
+    }
+    
+    
+    
 }
