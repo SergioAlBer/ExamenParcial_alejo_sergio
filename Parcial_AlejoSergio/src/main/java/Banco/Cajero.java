@@ -1,14 +1,53 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Banco;
 
-/**
- *
- * @author SERGIO
- */
+import Usuario.Cuenta;
+import Usuario.Tarjeta;
+
+
 public class Cajero {
+    
+    private String nombre;
+    private String direccion;
+    
+    
+    
+    public boolean depositar(Tarjeta t,Cuenta c,float monto){
+        boolean result=false;
+        
+        
+        return result;
+        
+        
+        
+    }
+    
+    public boolean retirar(Tarjeta t,Cuenta c,float monto){
+        boolean result=false;
+        
+        
+        return result;
+        
+        
+        
+    }
+    
+    
+    public boolean transferir(Tarjeta t,Cuenta c,float monto){
+        boolean result=false;
+        
+        
+        return result;
+        
+        
+        
+    }
+    
+    public boolean validarTarjeta(String RUCBanco,String numTarjeta,String DNI,String clave){
+        boolean result=false;
+        
+        
+        return result;
+    }
     
 }

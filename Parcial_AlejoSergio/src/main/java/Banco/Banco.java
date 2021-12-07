@@ -1,6 +1,9 @@
 
 package Banco;
 
+import Usuario.Cliente;
+import Usuario.Cuenta;
+
 
 public class Banco {
     
@@ -16,7 +19,17 @@ public class Banco {
         
     }
     
+    public Cuenta[] getCuentasPorCliente(Cliente c){
+        
+        
+        
+    }
     
-    
-    
+    public boolean validarTarjeta(String numTarjeta, String dni,String clave){
+        boolean result=false;
+        
+        
+        return result;
+        
+    }
 }

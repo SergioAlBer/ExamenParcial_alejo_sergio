@@ -9,9 +9,14 @@ public class Cuenta {
     private Date fechaApertura;
     private float saldo;
     
-     public boolean depositar(float monto){
+     
+    
+    public boolean depositar(float monto){
         boolean result=false;
-        
+        if(monto > 0.0){
+            this.saldo += monto;
+            result = true;
+        }
         
         return result;
         
@@ -19,7 +24,10 @@ public class Cuenta {
     
     public boolean retirar(float monto){
         boolean result=false;
-        
+        if(monto > 0.0){
+            this.saldo -= monto;
+            result = true;
+        }
         
         return result;
         
