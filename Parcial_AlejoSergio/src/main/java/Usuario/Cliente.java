@@ -33,7 +33,7 @@ public class Cliente {
         
     }
     
-    public Operacion[] consultarMovimiento(Cuenta c){
+    public Operacion[] consultarMovimientos(Cuenta c){
         
     }
     

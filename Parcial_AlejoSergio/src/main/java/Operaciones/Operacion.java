@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Operaciones;
 
-/**
- *
- * @author SERGIO
- */
+import java.util.Date;
+
+
 public class Operacion {
+    
+    private Date fecha;
+    private float monto;
+
+
+    public boolean registrar(Date fecha, float monto){
+        boolean result=false;
+        
+        
+        return result; 
+        
+    }
+    
     
 }
