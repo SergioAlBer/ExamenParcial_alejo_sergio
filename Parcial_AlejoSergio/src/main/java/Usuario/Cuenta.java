@@ -8,6 +8,8 @@ public class Cuenta {
     private String numero;
     private Date fechaApertura;
     private float saldo;
+    private Cliente titular;
+    private Tarjeta tarjeta;
     
      
     

@@ -14,7 +14,10 @@ public class Cajero {
     
     public boolean depositar(Tarjeta t,Cuenta c,float monto){
         boolean result=false;
-        
+         if(monto > 0.0){
+            c.depositar(monto);
+            result = true;
+        }
         
         return result;
         
@@ -24,7 +27,10 @@ public class Cajero {
     
     public boolean retirar(Tarjeta t,Cuenta c,float monto){
         boolean result=false;
-        
+         if(monto > 0.0){
+            c.retirar(monto);
+            result = true;
+        }
         
         return result;
         

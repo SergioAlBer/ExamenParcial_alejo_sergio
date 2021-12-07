@@ -4,6 +4,7 @@ package Banco;
 import Principal.Configuracion;
 import Usuario.Cliente;
 import Usuario.Cuenta;
+import Usuario.Tarjeta;
 
 
 public class Banco {
@@ -12,6 +13,7 @@ public class Banco {
     private String nombre;
     private String direccion;
     private Cuenta cuentas[];
+    private Cliente clientes[];
     private int indice;
 
     public Banco(String RUC, String nombre, String direccion) {
@@ -19,7 +21,8 @@ public class Banco {
         this.nombre = nombre;
         this.direccion = direccion;
         this.indice=0;
-        this.cuentas=new Cuenta[Configuracion.maxClientesxBanco];
+        this.cuentas=new Cuenta[Configuracion.maxCuentasxBanco];
+        this.clientes=new Cliente[Configuracion.maxCuentasxBanco];
         
     }
     
@@ -27,7 +30,7 @@ public class Banco {
     public boolean registrarCliente(Cliente c){
         boolean result=false;
         if(!estaLleno()){
-            this.cuentas[this.indice]=c;
+            this.clientes[this.indice]=c;
             
             result=true;
         }
@@ -37,16 +40,30 @@ public class Banco {
     }
     
     public Cuenta[] getCuentasPorCliente(Cliente c){
-        
+        for(int i=0;i<this.clientes.length;i++){
+            this.clientes[i]=c;
+            
+            
+        }
         
         
     }
     
     public boolean validarTarjeta(String numTarjeta, String dni,String clave){
         boolean result=false;
+         
         
         
         return result;
         
+    }
+
+    private boolean estaLleno() {
+          if(this.indice==Configuracion.maxCuentasxBanco){
+             return true;
+         }        
+         else{
+             return false;
+         }
     }
 }

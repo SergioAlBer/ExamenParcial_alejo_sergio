@@ -3,6 +3,6 @@ package Principal;
 
 public class Configuracion {
     
-     public static int maxClientesxBanco=10;
+     public static int maxCuentasxBanco=10;
     
 }
