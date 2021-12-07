@@ -20,7 +20,10 @@ public class Tarjeta {
     
     public boolean depositar(Cuenta c,float monto){
         boolean result=false;
-        
+         if(monto > 0.0){
+            c.depositar(monto);
+            result = true;
+        }
         
         return result;
         
@@ -29,7 +32,10 @@ public class Tarjeta {
     
     public boolean retirar(Cuenta c,float monto){
         boolean result=false;
-        
+        if(monto > 0.0){
+            c.retirar(monto);
+            result = true;
+        }
         
         return result;
         

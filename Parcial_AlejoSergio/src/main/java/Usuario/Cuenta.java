@@ -43,6 +43,14 @@ public class Cuenta {
     
     public float consultarSaldo(){
         
+        if(this.saldo>0){
+            
+            return this.saldo;
+            
+        }
+        
+        return 0;
+        
     }
     
     public boolean validarTarjeta(String clave){

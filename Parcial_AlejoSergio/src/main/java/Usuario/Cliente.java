@@ -35,7 +35,10 @@ public class Cliente {
     
     public boolean transferir(Cuenta c,float monto){
         boolean result=false;
-        
+        if(monto>0.0){
+            
+            
+        }
         
         return result;
         
